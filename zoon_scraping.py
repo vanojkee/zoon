@@ -63,7 +63,7 @@ def get_data(file_path):
     result_list = []
     urls_count = len(urls_list)
     count = 1
-    for url in urls_list[:20]:
+    for url in urls_list:
         response = requests.get(url=url, headers=headers)
         soup = BeautifulSoup(response.text, "lxml")
 
